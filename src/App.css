@@ -1,3 +1,60 @@
 body {
   margin: 0;
 }
+
+.app {
+  background-color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0 25px;
+}
+
+input {
+  background-color: white;
+  color: #222222;
+  border: 1px solid #222222;
+  border-radius: 100px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  width: 200px;
+}
+input::placeholder {
+  font-size: 13px;
+}
+input:focus {
+  outline: none;
+  border: 1px solid lightblue;
+}
+
+button {
+  background-color: #222222;
+  color: white;
+  border: 1px solid #222222;
+  border-radius: 100px;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 0 5px;
+}
+button:hover {
+  transform: scale(1.02, 1.02);
+  background-color: white;
+  color: #222222;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-message {
+  color: red;
+}
